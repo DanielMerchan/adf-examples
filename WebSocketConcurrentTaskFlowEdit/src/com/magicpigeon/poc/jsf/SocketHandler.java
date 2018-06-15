@@ -18,7 +18,7 @@ public final class SocketHandler {
      */
     public void SocketMessageReceive(ClientEvent ce) {
         String userId = (String) ce.getParameters().get("userId");
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, "Take Care!",
-                                "User: " + userId + " is editing this Task Flow, take care, he will override your changes and run away with your money!"));
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, "Watch out!",
+                                "Users: " + userId + " editing this Task Flow also!, take care!"));
     }
 }
