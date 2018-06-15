@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="test.jsf" id="d1" clientComponent="true">
+        <af:form id="f1">
+            <af:messages id="m1" inline="true">
+                <af:message id="m2"/>
+            </af:messages>
+            <af:region value="#{bindings.Faketf1.regionModel}" id="r1"/>
+        </af:form>
+        <f:facet name="metaContainer">
+            <af:resource type="javascript" source="/resources/js/TaskFlowWebSocket.js"/>
+            <af:resource type="javascript">
+                function initiateSocket(evt) {
+                    var userId = evt.getSource().getProperty("userId");
+                    var taskFlowId = evt.getSource().getProperty("taskFlowId");
+                    connectTaskFlowSocket(userId,taskFlowId);
+                }
+            </af:resource>
+        </f:facet>
+        <af:clientListener type="load" method="initiateSocket"/>
+        <af:clientAttribute name="userId" value="#{securityContext.userName}"/>
+        <af:clientAttribute name="taskFlowId" value="#{bindings.Faketf1.fullTaskFlowId}"/>
+        <af:serverListener method="#{socketHandler.SocketMessageReceive}" type="SocketMessageReceive"/>
+    </af:document>
+</f:view>
