@@ -48,6 +48,7 @@ function onOpen(evt) {
 function onMessage(evt) {
   var message = JSON.parse(evt.data);
   var comp = AdfPage.PAGE.findComponentByAbsoluteId('d1');
+  $.notify("User: " + message.userId + " is editing this also!!!","warn");
   AdfCustomEvent.queue(comp, "SocketMessageReceive",{userId: message.userId}, true);         
   evt.cancel();
   

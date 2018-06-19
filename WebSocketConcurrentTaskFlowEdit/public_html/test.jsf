@@ -9,6 +9,8 @@
             <af:region value="#{bindings.Faketf1.regionModel}" id="r1"/>
         </af:form>
         <f:facet name="metaContainer">
+            <af:resource type="javascript" source="/resources/js/jquery-3.3.1.min.js"/>
+            <af:resource type="javascript" source="/resources/js/notify.min.js"/>
             <af:resource type="javascript" source="/resources/js/TaskFlowWebSocket.js"/>
             <af:resource type="javascript">
                 function initiateSocket(evt) {
