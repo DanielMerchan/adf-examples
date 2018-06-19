@@ -47,10 +47,11 @@ function onOpen(evt) {
 // Handle the message received by the Web Socket
 function onMessage(evt) {
   var message = JSON.parse(evt.data);
-  var comp = AdfPage.PAGE.findComponentByAbsoluteId('d1');
-  $.notify("User: " + message.userId + " is editing this also!!!","warn");
-  AdfCustomEvent.queue(comp, "SocketMessageReceive",{userId: message.userId}, true);         
-  evt.cancel();
+  $.notify("User: " + message.userId + " is editing this also!!!",{position:"top center",className:"warn"});
+  // Inform by using JSF Faces Message from Server side
+//  var comp = AdfPage.PAGE.findComponentByAbsoluteId('d1');
+//  AdfCustomEvent.queue(comp, "SocketMessageReceive",{userId: message.userId}, true);         
+//  evt.cancel();
   
 }
 

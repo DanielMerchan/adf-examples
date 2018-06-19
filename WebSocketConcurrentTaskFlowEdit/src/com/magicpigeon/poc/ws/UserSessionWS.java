@@ -69,17 +69,12 @@ public final class UserSessionWS {
      */
     @Override
     public boolean equals(Object o) {
-
         if (o == this)
             return true;
         if (!(o instanceof UserSessionWS)) {
             return false;
         }
         UserSessionWS user = (UserSessionWS) o;
-        boolean a = Objects.equals(userId, user.userId) && Objects.equals(session, user.session);
-        System.out.println("Equals userId: " + userId + " " + user.userId + " " + Objects.equals(userId, user.userId));
-        System.out.println("Equals session: " + session + " " + user.session + " " + Objects.equals(session, user.session));
-        System.out.println("Equals: " + a);
         return Objects.equals(userId, user.userId) && Objects.equals(session, user.session);
     }
 
