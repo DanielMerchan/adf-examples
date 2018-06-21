@@ -40,6 +40,7 @@ function onClose(evt) {
   cancelKeepAlive();
 }
 
+// on open event
 function onOpen(evt) {
     keepAlive();
 }
