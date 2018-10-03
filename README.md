@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata>
-  <groupId>com.oracle.commons.beanutils.commons.beanutils</groupId>
-  <artifactId>commons-beanutils-1.9.3</artifactId>
-  <versioning>
-    <release>1.9.3-0-0</release>
-    <versions>
-      <version>1.9.3-0-0</version>
-    </versions>
-    <lastUpdated>20181003091234</lastUpdated>
-  </versioning>
-</metadata>
-
-
-
 # Oracle ADF - Sample Projects
 POCs, Demos and Helpful code of Oracle ADF
 
