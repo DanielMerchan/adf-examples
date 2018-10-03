@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>I18N_RESOURCE_BUNDLE_VALUES</name>
+  <columns>
+    <column>
+      <name>LOCALE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">10</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>RESOURCE_BUNDLE_KEY</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">100</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>RESOURCE_BUNDLE_VALUE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>I18N_RESOURCE_BUNDLE_VALUE_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>LOCALE</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>I18N_RESOURCE_BUNDLE_VALUES</name>
+            <schemaName>CUSTOM</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>CUSTOM</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>RESOURCE_BUNDLE_KEY</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>I18N_RESOURCE_BUNDLE_VALUES</name>
+            <schemaName>CUSTOM</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>CUSTOM</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>I18N_RESOURCE_BUNDLE_VALUE_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>I18N_RESOURCE_BUNDLE_VALUES</name>
+          <schemaName>CUSTOM</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>CUSTOM</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>I18N_RESOURCE_BUNDLE_VALUE_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>LOCALE</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>RESOURCE_BUNDLE_KEY</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <schema>
+        <name>CUSTOM</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>CUSTOM</name>
+  </schema>
+</table>

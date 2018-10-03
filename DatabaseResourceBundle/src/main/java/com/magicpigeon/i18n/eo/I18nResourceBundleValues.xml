@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="I18nResourceBundleValues"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="I18N_RESOURCE_BUNDLE_VALUES"
+  AliasName="I18nResourceBundleValues"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="Locale"
+    IsNotNull="true"
+    Precision="10"
+    ColumnName="LOCALE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="I18N_RESOURCE_BUNDLE_VALUES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ResourceBundleKey"
+    IsNotNull="true"
+    Precision="100"
+    ColumnName="RESOURCE_BUNDLE_KEY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="I18N_RESOURCE_BUNDLE_VALUES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ResourceBundleValue"
+    Precision="200"
+    ColumnName="RESOURCE_BUNDLE_VALUE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="I18N_RESOURCE_BUNDLE_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="I18nResourceBundleValuePk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="I18N_RESOURCE_BUNDLE_VALUE_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.magicpigeon.i18n.eo.I18nResourceBundleValues.Locale"/>
+      <Item Value="com.magicpigeon.i18n.eo.I18nResourceBundleValues.ResourceBundleKey"/>
+    </AttrArray>
+  </Key>
+</Entity>

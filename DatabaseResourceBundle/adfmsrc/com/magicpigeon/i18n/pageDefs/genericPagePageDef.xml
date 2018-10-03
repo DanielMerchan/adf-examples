@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.12.24" id="genericPagePageDef"
+                Package="com.magicpigeon.i18n.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+  </executables>
+  <bindings>
+    <methodAction id="getResourceBundle" RequiresUpdateModel="true" Action="invokeMethod" MethodName="getResourceBundle"
+                  IsViewObjectMethod="false" DataControl="I18AppModuleDataControl"
+                  InstanceName="bindings.getResourceBundle.dataControl.dataProvider"
+                  ReturnName="data.I18AppModuleDataControl.methodResults.getResourceBundle_getResourceBundle_dataControl_dataProvider_getResourceBundle_result">
+      <NamedData NDName="localeStr" NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

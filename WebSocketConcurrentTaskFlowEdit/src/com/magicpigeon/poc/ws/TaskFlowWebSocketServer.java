@@ -37,7 +37,6 @@ public final class TaskFlowWebSocketServer {
      */
     @OnOpen
     public void open(@PathParam("userId") String userId, @PathParam("taskFlowId") String taskFlowId, Session session) {
-        System.out.println("OPENING: " + userId);
         UserSessionWS userSessionWS = new UserSessionWS(session, userId);
         tfSessionHandler.initialize(userSessionWS, taskFlowId);
 
@@ -51,7 +50,6 @@ public final class TaskFlowWebSocketServer {
      */
     @OnClose
     public void close(@PathParam("userId") String userId, @PathParam("taskFlowId") String taskFlowId, Session session) {
-        System.out.println("CLOSING: " + userId);
         UserSessionWS userSessionWS = new UserSessionWS(session, userId);
         tfSessionHandler.finalize(userSessionWS, taskFlowId);
     }

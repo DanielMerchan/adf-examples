@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="I18AppModule"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="com.magicpigeon.i18n.am.I18AppModuleImpl"
+  ComponentInterface="com.magicpigeon.i18n.am.common.I18AppModule">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="I18nResourceBundleValues"
+    ViewObjectName="com.magicpigeon.i18n.vo.I18nResourceBundleValuesView"/>
+  <ViewUsage
+    Name="I18nResourceBundleValuesRO"
+    ViewObjectName="com.magicpigeon.i18n.vor.I18nResourceBundleValuesView"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="getResourceBundle"
+      MethodName="getResourceBundle">
+      <Return
+        Name="_return_type_"
+        Type="java.util.Map"
+        IsGeneric="true">
+        <Element
+          Name="String"
+          Type="java.lang.String"/>
+        <Element
+          Name="String1"
+          Type="java.lang.String"/>
+      </Return>
+      <Parameter
+        Name="localeStr"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
+</AppModule>

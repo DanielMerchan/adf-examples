@@ -1,5 +1,5 @@
 var wsUri = "ws://";
-var socketendpoint = "/ConcurrentTaskFlowEdit/websocket/taskflow/";
+var socketendpoint = "/WebSocketConcurrentTaskFlowEdit/websocket/taskflow/";
 var websocket;
 var userId;
 var taskFlowId;
@@ -57,7 +57,7 @@ function onMessage(evt) {
 }
 
 // Keep alive the Web Socket
-var timerID = 0; 
+var timerId = 0; 
 function keepAlive() { 
     var timeout = 20000;  
     if (websocket.readyState == websocket.OPEN) {  
