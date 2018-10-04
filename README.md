@@ -12,17 +12,17 @@ In Oracle WebCenter Portal and some Oracle ADF applications it is common to rend
 
 This demo makes use of https://github.com/verlok/lazyload implementation in combination with ADF Image tag to demonstrate how to use it in Oracle ADF.
 
-In this case we need to provide the HTML attributes data-src (and others if using required by the library) to our ```<af:image>``` tag. By using ```<af:passThroughAttribute>``` in combination with any ADF tag we can generate whatever attribute named in the way we want.
+As described in the library used, we need to add the **data-src** HTML attribute to our ```<af:image>``` tag. By using ```<af:passThroughAttribute>``` in combination with any ADF tag we can generate whatever attribute named in the way we want.
 
 lazyload.min.js requires to configure the ```styleClass``` with the value *lazyload* to allow the library to replace the image se in **data-src** to the image set in **src** automatically.
 
 ```xml
-   <af:image id="i1" styleClass="lazyload"
-                     source="/images/giphy.gif">
-     <af:passThroughAttribute name="data-src"
-                 value="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"/>
-   </af:image>
-   <af:resource source="/js/lazysizes.min.js" type="javascript"/>
+<af:image id="i1" styleClass="lazyload"
+                  source="/images/giphy.gif">
+ <af:passThroughAttribute name="data-src"
+   value="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"/>
+</af:image>
+<af:resource source="/js/lazysizes.min.js" type="javascript"/>
 ```
 
 In **WebCenter Portal - Content Presenter** or other components can be used EL Expressions to retrieve low-resolution versions of the image and then use this technique to replace the low-res by the hi-res variant when the page has been loaded.
