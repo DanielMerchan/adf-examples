@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="untitled1.jsf" id="d1">
+        <af:form id="f1">
+            <af:image id="i1" styleClass="lazyload"
+                      source="/images/giphy.gif">
+                <af:passThroughAttribute name="data-src"
+                                         value="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"/>
+            </af:image>
+            <af:image id="i2"  styleClass="lazyload"
+                      source="/images/giphy.gif">
+                <af:passThroughAttribute name="data-src"
+                                         value="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;h=750&amp;amp;w=1260"/>
+            </af:image>
+            <af:image source="/images/giphy.gif" styleClass="lazyload"
+                      id="i3">
+                <af:passThroughAttribute name="data-src"
+                                         value="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"/>
+            </af:image>
+            <af:image source="/images/giphy.gif"  styleClass="lazyload"
+                      id="i4">
+                <af:passThroughAttribute value="https://images.pexels.com/photos/38278/tiger-head-wildlife-animal-38278.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260"
+                                         name="data-src"/>
+            </af:image>
+        </af:form>
+        <af:resource source="/js/lazysizes.min.js" type="javascript"/>
+    </af:document>
+</f:view>
