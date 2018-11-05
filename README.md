@@ -4,6 +4,10 @@ POCs, Demos and Helpful code of Oracle ADF
 **Compatibility**: Oracle ADF 12.2.1.3+**
 **Java JDK**: 1.8+
 
+## PrimeFaces
+Small example of the usage of PrimeFaces UI Components in Oracle ADF.
+**Note: This is not a supported combination in Oracle ADF, this is only research and share purpose**
+
 ## ImageLazyLoading
 
 This is an example on how to use one of the multiple existing JavaScript libraries implementing Lazy-Loading for Images, Videos etc...
