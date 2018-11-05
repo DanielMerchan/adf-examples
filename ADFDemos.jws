@@ -31,6 +31,8 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="DatabaseResourceBundle/DatabaseResourceBundle.jpr"/></hash>
       <hash><url n="URL" path="ImageLazyLoading/ImageLazyLoading.jpr"/></hash>
+      <hash><url n="URL" path="OmniFacesWebSocket/OmniFacesWebSocket.jpr"/></hash>
+      <hash><url n="URL" path="PrimeFaces/PrimeFaces.jpr"/></hash>
       <hash><url n="URL" path="WebSocketConcurrentTaskFlowEdit/WebSocketConcurrentTaskFlowEdit.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">

@@ -9,6 +9,8 @@
     <module>WebSocketConcurrentTaskFlowEdit</module>
     <module>DatabaseResourceBundle</module>
     <module>ImageLazyLoading</module>
+    <module>PrimeFaces</module>
+    <module>OmniFacesWebSocket</module>
   </modules>
   <packaging>pom</packaging>
   <build>
@@ -43,6 +45,18 @@
     <dependency>
       <groupId>com.magicpigeon.adf</groupId>
       <artifactId>image-lazy-loading</artifactId>
+      <version>12.2.1-3-0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.magicpigeon.adf</groupId>
+      <artifactId>adf-prime-faces</artifactId>
+      <version>12.2.1-3-0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.magicpigeon.adf</groupId>
+      <artifactId>OmniFacesWebSocket</artifactId>
       <version>12.2.1-3-0</version>
       <type>war</type>
     </dependency>
