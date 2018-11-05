@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:p="http://primefaces.org/ui">
+    <af:document title="testPrimeFacesInADF.jsf" id="d1">
+        <af:form id="f1">
+            <af:messages id="m1"/>
+            <p:growl widgetVar="growlWV" />
+            <af:panelHeader text="PrimeFaces Rich Text Editor" id="ph1">
+                <p:textEditor/>
+            </af:panelHeader>
+            <af:button text="Test PrimeFaces Growl" partialSubmit="true" id="b1">
+                    <af:clientListener method="testPFGrowl" type="click"/>
+                </af:button>
+            <af:resource type="javascript">
+                function testPFGrowl(evt) {
+                    PF('growlWV').renderMessage({"summary":"summary goes here",
+                             "detail":"detail goes here",
+                             "severity":"warn"})
+                }
+            </af:resource>
+        </af:form>
+    </af:document>
+</f:view>
