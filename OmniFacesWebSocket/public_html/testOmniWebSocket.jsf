@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+xmlns:o="http://omnifaces.org/ui">
+    <af:document title="testOmniWebSocket.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelHeader text="Usage of OmniFaces WebSocket as ADF (JSF 2.2) cannot use JSF 2.3 WebSocket" id="ph1">
+                <o:socket channel="gooseChannel" onmessage="gooseListener"/>
+            </af:panelHeader>
+            <af:button text="Test Omni Socket Push" actionListener="#{socketBean.sendMessage()}" id="b1"/>
+            <af:resource type="javascript">
+                function gooseListener(message, channel, event) {
+                    $.notify("Message: " + message,{position:"top center",className:"warn"});
+                }
+            </af:resource>
+        </af:form>
+        <f:facet name="metaContainer">
+            <af:resource type="javascript" source="/resources/js/jquery-3.3.1.min.js"/>
+            <af:resource type="javascript" source="/resources/js/notify.min.js"/>
+         </f:facet>
+    </af:document>
+</f:view>
