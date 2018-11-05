@@ -4,6 +4,9 @@ POCs, Demos and Helpful code of Oracle ADF
 **Compatibility**: Oracle ADF 12.2.1.3+**
 **Java JDK**: 1.8+
 
+## OmniFacesWebSocket
+Small example on how to use OmniFaces 2.7 in combination with Oracle ADF 12cR2 for adding useful components or utilities to Oracle ADF. In this example it uses **<o:socket>** as Oracle ADF 12cR2 cannot use **<f:websocket>**
+
 ## PrimeFaces
 Small example of the usage of PrimeFaces UI Components in Oracle ADF.
 **Note: This is not a supported combination in Oracle ADF, this is only research and share purpose**
