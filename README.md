@@ -5,6 +5,10 @@ POCs, Demos and Helpful code of Oracle ADF
 **Java JDK**: 1.8+
 
 ## OmniFacesWebSocket
+Example of an ADF View Controller Project using CDI Managed Beans and ways of doing Dependency Injection.
+Read carefully my CDI blog post series to understand it https://goo.gl/g6chK2
+
+## OmniFacesWebSocket
 Small example on how to use OmniFaces 2.7 in combination with Oracle ADF 12cR2 for adding useful components or utilities to Oracle ADF. In this example it uses **<o:socket>** as Oracle ADF 12cR2 cannot use **<f:websocket>**
 
 ## PrimeFaces
