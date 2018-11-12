@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="testBeans.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGroupLayout id="pgl1">
+                <af:panelBox text="Request Scope" id="pb1">
+                    <af:panelGroupLayout id="pgl2" layout="horizontal">
+                        <af:button text="JSF RS adfc-config Managed Bean" actionListener="#{requestJSFBean.demoAction()}" id="b1"/>
+                        <af:button text="JSF RS Annotation Managed Bean" actionListener="#{requestJSFAnnBean.demoAction()}" id="b2"/>
+                        <af:button text="CDI Request Scoped Managed Bean" actionListener="#{requestCDIBean.demoAction()}" id="b3"/>
+                        <f:facet name="separator">
+                            <af:spacer width="10" id="s1"/>
+                        </f:facet>
+                    </af:panelGroupLayout>
+                </af:panelBox>
+            </af:panelGroupLayout>
+        </af:form>
+    </af:document>
+</f:view>              

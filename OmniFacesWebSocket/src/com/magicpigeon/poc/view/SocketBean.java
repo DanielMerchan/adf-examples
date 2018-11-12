@@ -29,7 +29,6 @@ public class SocketBean {
      */
     public SocketBean() {
         super();
-        System.out.println("aksjhdiahsdaiu");
     }
     
     public void sendMessage() {

@@ -29,6 +29,7 @@
       <string v="oracle.jdeveloper.model.PathsConfiguration/ResourceBundlesContentSet"/>
    </list>
    <list n="listOfChildren">
+      <hash><url n="URL" path="CDIvsADFManagedBean/CDIvsADFManagedBean.jpr"/></hash>
       <hash><url n="URL" path="DatabaseResourceBundle/DatabaseResourceBundle.jpr"/></hash>
       <hash><url n="URL" path="ImageLazyLoading/ImageLazyLoading.jpr"/></hash>
       <hash><url n="URL" path="OmniFacesWebSocket/OmniFacesWebSocket.jpr"/></hash>
