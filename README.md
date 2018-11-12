@@ -4,7 +4,7 @@ POCs, Demos and Helpful code of Oracle ADF
 **Compatibility**: Oracle ADF 12.2.1.3+**
 **Java JDK**: 1.8+
 
-## OmniFacesWebSocket
+## CDIvsADFManagedBean
 Example of an ADF View Controller Project using CDI Managed Beans and ways of doing Dependency Injection.
 Read carefully my CDI blog post series to understand it https://goo.gl/g6chK2
 
