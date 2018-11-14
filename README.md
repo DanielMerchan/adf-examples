@@ -4,6 +4,10 @@ POCs, Demos and Helpful code of Oracle ADF
 **Compatibility**: Oracle ADF 12.2.1.3+**
 **Java JDK**: 1.8+
 
+## CDIEventsExample
+Example of the usage of CDI Synchronous and CDI Asynchronous Events in Oracle ADF.
+However, only CDI Synchronous Events works due to WebLogic Server 12.2.1.3 is shipped with CDI 1.1 version.
+
 ## CDIvsADFManagedBean
 Example of an ADF View Controller Project using CDI Managed Beans and ways of doing Dependency Injection.
 Read carefully my CDI blog post series to understand it https://goo.gl/g6chK2
