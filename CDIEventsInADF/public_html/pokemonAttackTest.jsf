@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="pokemonAttackTest.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGroupLayout id="pgl1" layout="vertical">
+                <af:panelGroupLayout id="pgl2" layout="horizontal" valign="top">
+                    <af:panelBox text="Raichu" id="pb1" showDisclosure="false">
+                        <af:panelGroupLayout id="pgl3" layout="vertical">
+                            <af:image source="resources/images/Raichu.jpg" id="i1"/>
+                            <af:button text="Bolt (Sync)" id="b1"
+                                       actionListener="#{pokemon.attackSync('Bolt',pokemon.attackTypes[0])}"/>
+                            <af:button text="Tackle (Async)" id="b2"
+                                       actionListener="#{pokemon.attackAsync('Tackle',pokemon.attackTypes[3])}"/>
+                            <f:facet name="separator">
+                                <af:spacer height="10" id="s1"/>
+                            </f:facet>
+                        </af:panelGroupLayout>
+                    </af:panelBox>
+                    <af:panelBox text="Bulbasaur" id="pb2" showDisclosure="false">
+                        <af:panelGroupLayout id="pgl4" layout="vertical">
+                            <af:image source="resources/images/Venasaur.jpg" id="i2"/>
+                            <af:button text="Spit (Sync)" id="b3"
+                                       actionListener="#{pokemon.attackSync('Spit',pokemon.attackTypes[2])}"/>
+                            <af:button text="Solar Beam (Async)" id="b4"
+                                       actionListener="#{pokemon.attackAsync('Solar Beam',pokemon.attackTypes[4])}"/>
+                            <f:facet name="separator">
+                                <af:spacer height="10" id="s2"/>
+                            </f:facet>
+                        </af:panelGroupLayout>
+                    </af:panelBox>
+                </af:panelGroupLayout>
+                <af:spacer height="10" id="s3"/>
+                <af:panelGroupLayout id="pgl5" binding="#{pokemon.asyncPanelTextComp}">
+                    <af:outputText value="" id="ot1" binding="#{pokemon.asyncTextComp}"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:form>
+    </af:document>
+</f:view>
