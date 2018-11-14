@@ -17,7 +17,7 @@
                             </f:facet>
                         </af:panelGroupLayout>
                     </af:panelBox>
-                    <af:panelBox text="Bulbasaur" id="pb2" showDisclosure="false">
+                    <af:panelBox text="Venasaur" id="pb2" showDisclosure="false">
                         <af:panelGroupLayout id="pgl4" layout="vertical">
                             <af:image source="resources/images/Venasaur.jpg" id="i2"/>
                             <af:button text="Spit (Sync)" id="b3"

@@ -12,6 +12,7 @@
     <module>PrimeFaces</module>
     <module>OmniFacesWebSocket</module>
     <module>CDIvsADFManagedBean</module>
+    <module>CDIEventsInADF</module>
   </modules>
   <packaging>pom</packaging>
   <build>
@@ -64,6 +65,12 @@
     <dependency>
       <groupId>com.magicpigeon.adf</groupId>
       <artifactId>CDIvsADFManagedBean</artifactId>
+      <version>12.2.1-3-0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.magicpigeon.adf</groupId>
+      <artifactId>CDIEventsInADF</artifactId>
       <version>12.2.1-3-0</version>
       <type>war</type>
     </dependency>
